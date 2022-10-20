@@ -22,7 +22,8 @@ module Restforce
 
     # Internal: Returns true if the response is gzipped.
     def gzipped?(env)
-      env[:response_headers][CONTENT_ENCODING_HEADER] == ENCODING
+      # env[:response_headers][CONTENT_ENCODING_HEADER] == ENCODING
+      false
     end
 
     # Internal: Decompresses a gzipped string.
